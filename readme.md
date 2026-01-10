@@ -6,21 +6,6 @@ A pretrained convolutional neural network (DenseNet121) is used as a feature ext
 The goal of this project is to build a reliable and efficient medical image classification pipeline while addressing common challenges such as **imbalanced data**, **overfitting**, and **limited dataset size**.
 
 ---
-
-## 📂 Dataset Structure
-
-The dataset follows a standard directory structure compatible with TensorFlow pipelines:
-archive/chest_xray/
-├── train/
-│ ├── NORMAL/
-│ └── PNEUMONIA/
-├── val/
-│ ├── NORMAL/
-│ └── PNEUMONIA/
-└── test/
-├── NORMAL/
-└── PNEUMONIA/
-
 - **Training set**: Used for learning model parameters  
 - **Validation set**: Used for monitoring performance during training  
 - **Test set**: Used for final evaluation  
