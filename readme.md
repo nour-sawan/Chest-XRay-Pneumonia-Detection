@@ -56,8 +56,7 @@ This helps the model learn **general patterns** instead of memorizing pixel-leve
   - Sigmoid output layer (binary classification)
 
 ### 5️⃣ Handling Class Imbalance
-- Computed **class weights** based on training label distribution
-- Applied `class_weight` during training so the model gives more importance to the minority class
+- Computed **class weights** based on training label distribution- Applied `class_weight` during training so the model gives more importance to the minority class
 
 ### 6️⃣ Model Training
 - Optimizer: Adam
@@ -73,30 +72,7 @@ This helps the model learn **general patterns** instead of memorizing pixel-leve
   - Recall
   - F1-score
   - Confusion Matrix
-- Visualized training vs validation loss and accuracy curves
-
-## 📁 Project Structure
-CNN/
-├── archive/
-│ └── chest_xray/
-│ ├── train/
-│ │ ├── NORMAL/
-│ │ └── PNEUMONIA/
-│ ├── val/
-│ │ ├── NORMAL/
-│ │ └── PNEUMONIA/
-│ └── test/
-│ ├── NORMAL/
-│ └── PNEUMONIA/
-│
-├── explore_data.py # Data exploration and visualization
-├── preprocess_data.py # Preprocessing & data pipeline
-├── model.py # Transfer learning model definition
-├── train.py # Training with class imbalance handling
-├── evaluation.py # Model evaluation and metrics
-├── chest_xray_densenet_model.h5
-└── README.md
-
+  
 ## 🛠 Technologies Used
 - Python
 - TensorFlow / Keras
