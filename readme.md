@@ -79,8 +79,18 @@ This helps the model learn **general patterns** instead of memorizing pixel-leve
 CNN/
 ├── archive/
 │ └── chest_xray/
+│ ├── train/
+│ │ ├── NORMAL/
+│ │ └── PNEUMONIA/
+│ ├── val/
+│ │ ├── NORMAL/
+│ │ └── PNEUMONIA/
+│ └── test/
+│ ├── NORMAL/
+│ └── PNEUMONIA/
+│
 ├── explore_data.py # Data exploration and visualization
-├── preprocess_data.py # Preprocessing and data pipeline
+├── preprocess_data.py # Preprocessing & data pipeline
 ├── model.py # Transfer learning model definition
 ├── train.py # Training with class imbalance handling
 ├── evaluation.py # Model evaluation and metrics
