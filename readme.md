@@ -79,3 +79,62 @@ This helps the model learn **general patterns** instead of memorizing pixel-leve
 - NumPy
 - Matplotlib
 - Transfer Learning (DenseNet121)
+
+##▶️ How to Run the Project
+
+Follow the steps below to run the project locally using a Python virtual environment.
+
+###1️⃣ Clone the repository
+git clone https://github.com/USERNAME/Chest-XRay-Pneumonia-Detection.git
+cd Chest-XRay-Pneumonia-Detection
+
+###2️⃣ Create and activate a virtual environment
+
+Windows:
+
+python -m venv testenv
+testenv\Scripts\activate
+
+
+macOS / Linux:
+
+python3 -m venv testenv
+source testenv/bin/activate
+
+
+You should see the virtual environment activated in your terminal.
+
+###3️⃣ Install dependencies
+pip install -r requirements.txt
+
+###4️⃣ Prepare the dataset
+
+Download the Chest X-ray dataset and place it inside the following directory structure:
+
+archive/chest_xray/
+├── train/
+├── val/
+└── test/
+
+
+Make sure each split contains NORMAL and PNEUMONIA subfolders.
+
+###5️⃣ Run data exploration (optional)
+python explore_data.py
+
+###6️⃣ Train the model
+python train.py
+
+
+The trained model will be saved as:
+
+chest_xray_densenet_model.h5
+
+####7️⃣ Evaluate the model
+python evaluation.py
+
+ℹ️ Notes
+
+All experiments were run inside a virtual environment to ensure dependency isolation.
+
+GPU acceleration is optional but recommended for faster training.
