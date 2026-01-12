@@ -82,14 +82,12 @@ This helps the model learn **general patterns** instead of memorizing pixel-leve
 
 ---
 ## ▶️ How to Run the Project
-
 Follow the steps below to run the project locally using a Python virtual environment.
 
 ### 1️⃣ Clone the repository
-git clone https://github.com/USERNAME/Chest-XRay-Pneumonia-Detection.git
+git clone https://github.com/nour-sawan/Chest-XRay-Pneumonia-Detection.git
 
 ### 2️⃣ Create and activate a virtual environment
-
 - Windows:
 python -m venv testenv
 testenv\Scripts\activate
@@ -119,6 +117,8 @@ chest_xray_densenet_model.h5
 
 ### 7️⃣ Evaluate the model
 python evaluation.py
+
+---
 
 ### ℹ️ Notes
 All experiments were run inside a virtual environment to ensure dependency isolation.
