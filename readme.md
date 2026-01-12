@@ -17,9 +17,7 @@ The dataset is **imbalanced**, with more pneumonia cases than normal cases.
 ## 🖼 Sample X-ray Images
 
 Below are example images from the dataset showing both classes:
-
 ![Sample Chest X-rays](sample_images.png)
-
 > NORMAL X-rays show clear lung fields, while PNEUMONIA cases often exhibit opacity and consolidation patterns.
 
 ## 🔍 Project Workflow
